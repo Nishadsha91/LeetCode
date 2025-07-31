@@ -11,7 +11,7 @@
  * @return {boolean}
  */
 
-root = [10,4,6];
+
 var checkTree = function(root) {
   
     if ( root.val == root.left.val + root.right.val){
