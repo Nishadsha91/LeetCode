@@ -4,12 +4,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        nums.sort() 
-        smallest = 1  
+        n = len(nums)
 
-        for num in nums:
-            if num == smallest:
-                smallest += 1
+        # Step 1: place each number in its correct position
+        for i in range(n):
+            while 1 <= nums[i] <= n and nums[nums[i]-1] != nums[i]:
+                nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1]
 
-        return smallest
+        # Step 2: find the first missing positive
+        for i in range(n):
+            if nums[i] != i + 1:
+                return i + 1
 
+        return n + 1
