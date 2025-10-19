@@ -6,6 +6,5 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        squared = sqrt(x)
-        return int(squared)
+        return int(sqrt(x))
         
