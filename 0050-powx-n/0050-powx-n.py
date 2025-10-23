@@ -6,6 +6,6 @@ class Solution(object):
         :rtype: float
         """
         s = pow(x,n)
-        return float(s)
+        return s
 
         
