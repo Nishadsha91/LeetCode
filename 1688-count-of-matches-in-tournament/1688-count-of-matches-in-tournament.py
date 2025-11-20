@@ -1,0 +1,21 @@
+class Solution(object):
+    def numberOfMatches(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        count = 0  
+
+        while n > 1:  
+            matches = n // 2              
+            count += matches              
+            n = matches + (n % 2)         
+
+        return count
+
+        # return n-1
+
+            
+
+
+        
