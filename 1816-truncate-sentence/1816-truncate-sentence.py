@@ -6,7 +6,6 @@ class Solution(object):
         :rtype: str
         """
         wrd = s.split()
-        res = " ".join(wrd[:k])
-        return res
+        return " ".join(wrd[:k])
         
         
