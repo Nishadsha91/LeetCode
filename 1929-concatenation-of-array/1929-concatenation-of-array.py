@@ -4,5 +4,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        # n = [*nums , *nums]
         return nums + nums
         
